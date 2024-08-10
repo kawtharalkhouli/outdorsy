@@ -1,0 +1,47 @@
+<section class="sub-container">
+    <div class="sub-container__main">
+        <mat-icon class="sub-container__icon">store</mat-icon>
+        <span class="sub-container__title">Store Items</span>
+    </div>
+
+    <button mat-raised-button color="primary" (click)="myCartUpdate()">
+        View Cart
+    </button>
+</section>
+
+<div class="seperator"></div>
+
+
+<section class="products-container">
+<div *ngFor="let product of products">
+
+    <div class="products-container__card">
+        <div class="products-container__card--sub">
+            <div class="products-container__card--details">
+                <span class="products-container__title">Product Name</span>
+                <span class="products-container__details">{{product.product}}</span>
+            </div>
+        
+            <div class="products-container__card--details">
+                <span class="products-container__title">Price</span>
+                <span class="products-container__details">{{product.price}} $</span>
+            </div>
+        </div>
+
+        <div class="products-container__card--sub">
+            <div class="products-container__card--details">
+                <span class="products-container__title">Stock Availability</span>
+                <span class="products-container__details" [ngClass]="{'available': product.stockAvailability === 'In Stock', 'notAvailable' : product.stockAvailability === 'Out of Stock'}">{{product.stockAvailability}}</span>
+            </div>
+
+            <div class="products-container__card--add">
+                <span class="add-options" (click)="changeQuantity(product, 'subtract')">-</span>
+                <span class="count">{{product.initialQuantity}}</span>
+                <span class="add-options" (click)="changeQuantity(product,'add')">+</span>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</section>
+

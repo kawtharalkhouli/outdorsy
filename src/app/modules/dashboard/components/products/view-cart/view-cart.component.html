@@ -1,0 +1,44 @@
+<div
+  class="d-flex justify-content-between align-items-center border-bottom pb-1">
+  <p class="m-0" mat-dialog-title>My Cart</p>
+  <mat-icon (click)="closeDialog()" class="close-dialog">close</mat-icon>
+</div>
+
+<section class="products-container" *ngIf="data.length > 0">
+    <span>Total Number of items : {{total}}</span>
+    <div *ngFor="let product of data">
+        <ng-container *ngIf="product.initialQuantity !==0 ">
+    
+            <div class="products-container__card">
+                <div class="products-container__card--sub">
+                    <div class="products-container__card--details">
+                        <span class="products-container__title">Product Name</span>
+                        <span class="products-container__details">{{product.product}}</span>
+                    </div>
+                
+                    <div class="products-container__card--details">
+                        <span class="products-container__title">Price</span>
+                        <span class="products-container__details">{{product.price}} $</span>
+                    </div>
+                </div>
+        
+                <div class="products-container__card--sub">
+    
+                    <div class="products-container__card--details align-items-center">
+                        <span class="products-container__title">Quantity</span>
+                        <span class="products-container__details">{{product.initialQuantity}}</span>
+                    </div>
+    
+                    <div class="products-container__card--details align-items-center">
+                        <span class="products-container__title">Delete</span>
+                        <mat-icon class="products-container__delete" (click)="delete(product)">delete</mat-icon>
+                    </div>
+    
+                </div>
+            </div>
+        </ng-container>
+
+    </div>
+</section>
+
+

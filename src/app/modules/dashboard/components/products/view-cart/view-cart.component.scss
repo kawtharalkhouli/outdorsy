@@ -1,0 +1,93 @@
+
+::ng-deep{
+    .mat-mdc-dialog-container .mdc-dialog__surface{
+        background-color: #fff !important;
+    }
+    .mat-mdc-dialog-container .mdc-dialog__title {
+        color: #13122c;
+    }
+}
+
+.close-dialog{
+    position: relative;
+    top: 4px;
+    margin-inline-end: 20px;
+    color: #666;
+    cursor: pointer;
+
+}
+
+.products-container{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: center;
+
+    &__delete{
+        color: #ff4b4b;
+        cursor: pointer;
+    }
+
+    &__title{
+        color: #666;
+        font-size: 13px;
+    }
+
+    &__details{
+        color: #000;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    &__card{
+        border: 1px solid #eee;
+        padding: 10px 20px;
+        min-width: 248px;
+        max-width: 250px;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        box-shadow: 0px 0px 4px #00000012;
+
+        &--sub{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &--details{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--add{
+            display: flex;
+            gap: 5px;
+
+            & .add-options{
+                background: #e59292;
+                border-radius: 50%;
+                width: 27px;
+                height: 27px;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                color: #fff;
+                cursor: pointer;
+
+                &:hover{
+                    background: #c17171;
+                }
+            }
+
+            & .count{
+                font-size: 16px;
+                color: #13122c;
+                font-weight: bold;
+            }
+        }
+    }
+}
+

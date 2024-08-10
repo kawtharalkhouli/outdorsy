@@ -1,0 +1,60 @@
+
+<mat-sidenav-container autosize class="side-nav">
+    <mat-sidenav #sidenav mode="side" opened="true" class="app-sidenav">
+      <mat-nav-list>
+
+        <div class="side-nav__img">
+            <img src="../../../assets/images/main.svg">
+        </div>
+
+        <mat-list-item [routerLink]="'products'" routerLinkActive="active">
+            <mat-icon class="nav-bar-icon">store</mat-icon>
+            <span class="menu-item">Home</span>
+        </mat-list-item>
+
+        <!-- <mat-list-item [routerLink]="'products'" routerLinkActive="active">
+            <mat-icon class="nav-bar-icon">category_search</mat-icon>
+            <span class="menu-item">Products</span>
+        </mat-list-item> -->
+
+        <!-- <mat-list-item [routerLink]="'my-cart'" routerLinkActive="active">
+            <mat-icon class="nav-bar-icon">shopping_cart</mat-icon>
+            <span class="menu-item">My Cart</span>
+        </mat-list-item> -->
+
+        <div class="seperator"></div>
+
+        <mat-list-item>
+            <mat-icon class="nav-bar-icon">settings</mat-icon>
+            <span class="menu-item">Settings</span>
+        </mat-list-item>
+
+        <mat-list-item>
+            <mat-icon class="nav-bar-icon">account_circle</mat-icon>
+            <span class="menu-item">My Profile</span>
+        </mat-list-item>
+
+        <div class="seperator"></div>
+
+        <mat-list-item [routerLink]="'/login'">
+            <mat-icon class="nav-bar-icon">logout</mat-icon>
+            <span class="menu-item">Logout</span>
+        </mat-list-item>
+
+  </mat-nav-list>
+</mat-sidenav>
+  
+    <mat-sidenav-content class="sidenav-content">
+        <mat-toolbar color="#fff" class="main-header">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+              <mat-icon class="toolbar-icon">store</mat-icon>
+            </button>
+            <span class="main-title">Outdorsy</span>
+            <span class="example-spacer"></span>
+          </mat-toolbar>
+          <div class="main-section">
+            <router-outlet></router-outlet>
+          </div>
+    </mat-sidenav-content>
+  
+  </mat-sidenav-container>

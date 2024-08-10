@@ -1,0 +1,161 @@
+{
+  "signUpUsers": [
+    {
+      "id": "827a",
+      "fullName": "Kawthar Alkhouli",
+      "email": "kawthar.alkhouli@gmail.com",
+      "dateOfBirth": "1999-05-01T22:00:00.000Z",
+      "mobileNo": "0796494196",
+      "password": "K@wth@r@123",
+      "confirmPassword": "K@wth@r@123"
+    },
+    {
+      "id": "e262",
+      "fullName": "",
+      "email": "",
+      "password": "Aa@12345",
+      "confirmPassword": ""
+    },
+    {
+      "id": "87b9",
+      "fullName": "Admin",
+      "email": "admin@outlook.com",
+      "password": "admin@admin123",
+      "confirmPassword": "admin@admin123"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "product": "Item 1",
+      "stockAvailability": "Out of Stock",
+      "price": "20",
+      "initialQuantity": 0
+    },
+    {
+      "id": "2",
+      "product": "Item 2",
+      "stockAvailability": "In Stock",
+      "price": "10",
+      "initialQuantity": 0
+    },
+    {
+      "id": "3",
+      "product": "Item 3",
+      "stockAvailability": "Out of Stock",
+      "price": "30",
+      "initialQuantity": 0
+    },
+    {
+      "id": "4",
+      "product": "Item 4",
+      "stockAvailability": "Out of Stock",
+      "price": "10",
+      "initialQuantity": 0
+    },
+    {
+      "id": "5",
+      "product": "Item 5",
+      "stockAvailability": "In Stock",
+      "price": "3",
+      "initialQuantity": 0
+    },
+    {
+      "id": "6",
+      "product": "Item 6",
+      "stockAvailability": "In Stock",
+      "price": "25",
+      "initialQuantity": 0
+    },
+    {
+      "id": "7",
+      "product": "Item 7",
+      "stockAvailability": "Out of Stock",
+      "price": "5",
+      "initialQuantity": 0
+    },
+    {
+      "id": "8",
+      "product": "Item 8",
+      "stockAvailability": "In Stock",
+      "price": "2",
+      "initialQuantity": 0
+    },
+    {
+      "id": "9",
+      "product": "Item 9",
+      "stockAvailability": "In Stock",
+      "price": "5",
+      "initialQuantity": 0
+    },
+    {
+      "id": "10",
+      "product": "Item 10",
+      "stockAvailability": "In Stock",
+      "price": "10",
+      "initialQuantity": 0
+    },
+    {
+      "id": "11",
+      "product": "Item 11",
+      "stockAvailability": "In Stock",
+      "price": "2",
+      "initialQuantity": 0
+    },
+    {
+      "id": "12",
+      "product": "Item 12",
+      "stockAvailability": "In Stock",
+      "price": "5",
+      "initialQuantity": 0
+    },
+    {
+      "id": "13",
+      "product": "Item 13",
+      "stockAvailability": "In Stock",
+      "price": "10",
+      "initialQuantity": 0
+    },
+    {
+      "id": "14",
+      "product": "Item 14",
+      "stockAvailability": "In Stock",
+      "price": "2",
+      "initialQuantity": 0
+    },
+    {
+      "id": "15",
+      "product": "Item 15",
+      "stockAvailability": "In Stock",
+      "price": "5",
+      "initialQuantity": 0
+    },
+    {
+      "id": "16",
+      "product": "Item 16",
+      "stockAvailability": "In Stock",
+      "price": "5",
+      "initialQuantity": 0
+    },
+    {
+      "id": "17",
+      "product": "Item 17",
+      "stockAvailability": "In Stock",
+      "price": "2",
+      "initialQuantity": 0
+    },
+    {
+      "id": "18",
+      "product": "Item 18",
+      "stockAvailability": "In Stock",
+      "price": "3",
+      "initialQuantity": 0
+    }
+  ],
+  "subscribers": [
+    {
+      "id": "aa6e",
+      "email": "kawthar_alkhouli@outlook.com"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+
+::ng-deep{
+    .mat-mdc-dialog-container .mdc-dialog__surface{
+        background-color: #fff !important;
+    }
+    .mat-mdc-dialog-container .mdc-dialog__title {
+        color: #13122c;
+    }
+}
+
+.dialog-header{
+    padding: 20px 0px 0px 10px;
+
+    &__title{
+        position: relative;
+        top: -6px;
+        color: #13122c;
+        font-weight: bold;
+    }
+
+}
+
+.close-dialog{
+    position: relative;
+    top: -5px;
+    margin-inline-end: 20px;
+    color: #666;
+    cursor: pointer;
+
+}
+
+.subscribe-dialog{
+
+    .field-label{
+        margin-bottom: 10px;
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__container{
+        margin: 15px;
+    }
+
+}

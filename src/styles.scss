@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: cursive }
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+*::-webkit-scrollbar {
+    width: 6px;
+  
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color: #b2b2b2;
+    border-radius: 6px;
+  
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #787879;
+    border-radius: 6px;
+    border: 1px solid #b2b2b2;
+  
+  }
+  
+  *::-webkit-scrollbar:horizontal {
+    height: 8px;
+    border-radius: 6px;
+  
+  }

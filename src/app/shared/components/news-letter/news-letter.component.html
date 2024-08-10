@@ -1,0 +1,23 @@
+<div
+  class="d-flex justify-content-between align-items-center border-bottom pb-1 dialog-header">
+  <p class="m-0 dialog-header__title" mat-dialog-title>Subscribe to Our News Letter</p>
+  <mat-icon (click)="closeDialog()" class="close-dialog">close</mat-icon>
+</div>
+
+<form [formGroup]="subscriptionForm">
+    <div class="subscribe-dialog">
+        <div class="row mt-4 subscribe-dialog__container">
+            <div class="col-md-12">
+                <p class="field-label">Email</p>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Email" formControlName="email" >
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="subscribe-dialog__button">
+            <button mat-raised-button color="primary" (click)="subscribe()">Subscribe</button>
+        </div>
+
+    </div>
+</form>

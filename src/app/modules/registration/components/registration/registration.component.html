@@ -1,0 +1,75 @@
+<div class="body-container">
+    <div class="body-container__main">
+        <div class="body-container__register">
+            <h2>Sign up</h2>
+            <p>Enter your details below to create your account and get started.</p>
+            <div class="registration-details">
+            <div class="registration-details__img">
+                <img src="../../../assets/images/main.svg">
+            </div>
+
+            <form [formGroup]="signupForm">
+                <input autocomplete="false" name="hidden" type="text" style="display:none;">
+                <div>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <p class="field-label">Full Name</p>
+                            <mat-form-field appearance="outline">
+                                <input matInput placeholder="Full Name" formControlName="fullName">
+                            </mat-form-field>
+                        </div>
+        
+                        <div class="col-md-6">
+                            <p class="field-label">Email</p>
+                            <mat-form-field appearance="outline">
+                                <input matInput placeholder="Email" formControlName="email" autocomplete="off">
+                            </mat-form-field>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="field-label">Password</p>
+                            <mat-form-field appearance="outline">
+                                <input matInput placeholder="Password"  formControlName="password" autocomplete="off" [type]="hide ? 'password' : 'text'">
+                                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                    <mat-icon class="password-icon">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                  </button>
+                            </mat-form-field>
+                        </div>
+        
+                        <div class="col-md-6">
+                            <p class="field-label">Confirm Password</p>
+                            <mat-form-field appearance="outline">
+                                <input matInput placeholder="Confirm Password" formControlName="confirmPassword" autocomplete="off" [type]="hide ? 'password' : 'text'">
+                                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                    <mat-icon class="password-icon">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                </button>
+                            </mat-form-field>
+                        </div>
+                    </div>
+        
+                    <div class="body-container__action-buttons">
+                        <button mat-raised-button color="primary" (click)="signUp()">Sign Up</button>
+                    </div>
+    
+                    <div class="body-container__login-details">
+                        <span class="normal-text">Already have an account?</span>
+                        <span class="link-text" routerLink="/login">Login</span>
+                    </div>
+
+                    <div class="body-container__login-details mt-3">
+                        <mat-icon class="colored-icon">mail</mat-icon>
+                        <span class="link-text" (click)="subscribe()">Subscribe to Our News Letter</span>
+                    </div>
+    
+                </div>
+            </form>
+
+            
+
+            </div>
+            
+        </div>
+    </div>
+</div>
