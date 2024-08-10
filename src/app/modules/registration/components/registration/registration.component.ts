@@ -29,7 +29,6 @@ export class RegistrationComponent implements OnInit {
       fullName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       password: ['',[Validators.required, Validators.email]],
-      confirmPassword: ['',[Validators.required, Validators.email]]
     })
   }
 
@@ -47,10 +46,7 @@ export class RegistrationComponent implements OnInit {
 
   signUp(){
     if(this.signupForm.invalid) return;
-    else if(this.signupForm.controls['password'] !== this.signupForm.controls['confirmPassword'] ) 
-      alert('Passwords Do Not Match')
-    else
-
+    
     this.http.post<any>("http://localhost:8000/signUpUsers", this.signupForm.value).subscribe(res => {
       alert('User Created Successfully!');
       this.signupForm.reset();

@@ -1,27 +1,10 @@
 {
   "signUpUsers": [
     {
-      "id": "827a",
-      "fullName": "Kawthar Alkhouli",
-      "email": "kawthar.alkhouli@gmail.com",
-      "dateOfBirth": "1999-05-01T22:00:00.000Z",
-      "mobileNo": "0796494196",
-      "password": "K@wth@r@123",
-      "confirmPassword": "K@wth@r@123"
-    },
-    {
-      "id": "e262",
-      "fullName": "",
-      "email": "",
-      "password": "Aa@12345",
-      "confirmPassword": ""
-    },
-    {
-      "id": "87b9",
-      "fullName": "Admin",
-      "email": "admin@outlook.com",
-      "password": "admin@admin123",
-      "confirmPassword": "admin@admin123"
+      "id": "94e0",
+      "fullName": "Kawthar",
+      "email": "kawthar@outlook.com",
+      "password": "kawthar@123"
     }
   ],
   "products": [

@@ -28,7 +28,7 @@
                     </div>
         
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <p class="field-label">Password</p>
                             <mat-form-field appearance="outline">
                                 <input matInput placeholder="Password"  formControlName="password" autocomplete="off" [type]="hide ? 'password' : 'text'">
@@ -37,16 +37,7 @@
                                   </button>
                             </mat-form-field>
                         </div>
-        
-                        <div class="col-md-6">
-                            <p class="field-label">Confirm Password</p>
-                            <mat-form-field appearance="outline">
-                                <input matInput placeholder="Confirm Password" formControlName="confirmPassword" autocomplete="off" [type]="hide ? 'password' : 'text'">
-                                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-                                    <mat-icon class="password-icon">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                                </button>
-                            </mat-form-field>
-                        </div>
+    
                     </div>
         
                     <div class="body-container__action-buttons">
